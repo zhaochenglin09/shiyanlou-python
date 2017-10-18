@@ -1,18 +1,30 @@
+a = [[0 for x in range(10)] for y in range(10)]
 
-n = int(input("Enter student number: "))
-data = {}
-Subjects = ('Physics', 'Maths', 'History')
+b =[[0]*10]*10
 
-for i in range(0,n):
-    name = input("Enter the name of student {}:".format(i + 1))
-    marks = []
-    for x in Subjects:
-        marks.append(int(input('Enter marks of {}'.format(x))))
-    data[name] = marks
-for x, y in data.items():
-    total = sum(y)
-    print("{}'s total marks is {}".format(x, total))
-    if total < 120:
-        print(x, "failed")
-    else:
-        print(x,"passed")
+for i in range(10):
+
+    for j in range(10):
+
+        b[2][0]= 2        
+
+        print("a[{}][{}]={}".format(i, j, a[i][j]),end=' ')
+
+    print()
+
+print("-"*50)
+
+for i in range(10):
+
+    for j in range(10):
+
+        b[2][0]= 2 
+
+        print("b[{}][{}]={}".format(i, j, b[i][j]),end=' ')
+
+    print()
+print("-"*50)
+
+print(a==b)
+
+
